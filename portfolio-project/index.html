@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="logo">My Portfolio</h1>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio! I am a B.Tech student passionate about web development. This is my major project showcasing my skills.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="project-grid">
+                <div class="project" data-category="web">
+                    <h3>Web Project 1</h3>
+                    <p>Description of web project 1.</p>
+                    <button class="details-btn" data-project="web1">View Details</button>
+                </div>
+                <div class="project" data-category="mobile">
+                    <h3>Mobile App 1</h3>
+                    <p>Description of mobile app 1.</p>
+                    <button class="details-btn" data-project="mobile1">View Details</button>
+                </div>
+                <div class="project" data-category="design">
+                    <h3>Design Project 1</h3>
+                    <p>Description of design project 1.</p>
+                    <button class="details-btn" data-project="design1">View Details</button>
+                </div>
+                <div class="project" data-category="web">
+                    <h3>Web Project 2</h3>
+                    <p>Description of web project 2.</p>
+                    <button class="details-btn" data-project="web2">View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modal-body">
+                <!-- Project details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: your.email@example.com</p>
+            <p>LinkedIn: <a href="#">Your LinkedIn</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
